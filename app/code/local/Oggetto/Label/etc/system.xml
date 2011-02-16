@@ -1,0 +1,229 @@
+<?xml version="1.0" ?>
+<config>
+    <tabs>
+        <oggetto_tab module="label" translate="label">
+            <label>Oggetto</label>
+            <sort_order>100</sort_order>
+        </oggetto_tab>
+    </tabs>
+    <sections>
+        <label module="label" translate="label">
+            <label>Label</label>
+            <sort_order>200</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <tab>oggetto_tab</tab>
+            <groups>
+                <label_group1 translate="label">
+                    <label>Labels 1 Settings</label>
+                    <comment>This settings are using when product Label Display is set to Disable</comment>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <expanded>1</expanded>
+                    <fields>
+                        <label_name1 translate="label tooltip comment">
+                            <label>Name</label>
+                            <comment>Will be shown on product management page</comment>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </label_name1>
+                        <label_display1 translate="label tooltip comment">
+                            <label>Display for</label>
+                            <comment>Show Label on this page</comment>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>
+                            <source_model>attribute/Product_Attribute_Display</source_model>
+                        </label_display1>
+                        <label_image1 translate="label tooltip comment">
+                            <label>Image</label>
+                            <comment>Default label image</comment>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">catalog/product</upload_dir>
+                            <base_url type="media" scope_info="1">catalog/product</base_url>
+                        </label_image1>
+                        <label_position1 translate="label tooltip comment">
+                            <label>Position</label>
+                            <comment>Label position on product image</comment>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>
+                            <source_model>attribute/Product_Attribute_Position</source_model>
+                        </label_position1>
+                    </fields>
+                </label_group1>
+                <label_group2 translate="label">
+                    <label>Label 2 Settings </label>
+                    <comment>This settings are using when product Label Display is set to Disable</comment>
+                    <sort_order>11</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <expanded>1</expanded>
+                    <fields>
+                        <label_name2 translate="label tooltip comment">
+                            <label>Name</label>
+                            <comment>Will be shown on product management page</comment>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </label_name2>
+                        <label_display2 translate="label tooltip comment">
+                            <label>Display for</label>
+                            <comment>Show Label on this page</comment>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>
+                            <source_model>attribute/Product_Attribute_Display</source_model>
+                        </label_display2>
+                        <label_image2 translate="label tooltip comment">
+                            <label>Image</label>
+                            <comment>Default label image</comment>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">catalog/product</upload_dir>
+                            <base_url type="media" scope_info="1">catalog/product</base_url>
+                        </label_image2>
+                        <label_position2 translate="label tooltip comment">
+                            <label>Position</label>
+                            <comment>Label position on product image</comment>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>
+                            <source_model>attribute/Product_Attribute_Position</source_model>
+                        </label_position2>
+                    </fields>
+                </label_group2>
+                <label_group3 translate="label">
+                    <label>Labels 3 Settings</label>
+                    <comment>This settings are using when product Label Display is set to Disable</comment>
+                    <sort_order>12</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <expanded>1</expanded>
+                    <fields>
+                        <label_name3 translate="label tooltip comment">
+                            <label>Name</label>
+                            <comment>Will be shown on product management page</comment>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </label_name3>
+                        <label_display3 translate="label tooltip comment">
+                            <label>Display for</label>
+                            <comment>Show Label on this page</comment>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>
+                            <source_model>attribute/Product_Attribute_Display</source_model>
+                        </label_display3>
+                        <label_image3 translate="label tooltip comment">
+                            <label>Image</label>
+                            <comment>Default label image</comment>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">catalog/product</upload_dir>
+                            <base_url type="media" scope_info="1">catalog/product</base_url>
+                        </label_image3>
+                        <label_position3 translate="label tooltip comment">
+                            <label>Position</label>
+                            <comment>Label position on product image</comment>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>
+                            <source_model>attribute/Product_Attribute_Position</source_model>
+                        </label_position3>
+                    </fields>
+                </label_group3>
+                <label_group4 translate="label">
+                    <label>Labels 4 Settings</label>
+                    <comment>This settings are using when product Label Display is set to Disable</comment>
+                    <sort_order>13</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <expanded>1</expanded>
+                    <fields>
+                        <label_name4 translate="label tooltip comment">
+                            <label>Name</label>
+                            <comment>Will be shown on product management page</comment>
+                            <show_in_default>1</show_in_default>
+                            <sort_order>0</sort_order>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </label_name4>
+                        <label_display4 translate="label tooltip comment">
+                            <label>Display for</label>
+                            <comment>Show Label on this page</comment>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>
+                            <source_model>attribute/Product_Attribute_Display</source_model>
+                        </label_display4>
+                        <label_image4 translate="label tooltip comment">
+                            <label>Image</label>
+                            <comment>Default label image</comment>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">catalog/product</upload_dir>
+                            <base_url type="media" scope_info="1">catalog/product</base_url>
+                        </label_image4>
+                        <label_position4 translate="label tooltip comment">
+                            <label>Position</label>
+                            <comment>Label position on product image</comment>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>
+                            <source_model>attribute/Product_Attribute_Position</source_model>
+                        </label_position4>
+                    </fields>
+                </label_group4>
+            </groups>
+        </label>
+    </sections>
+</config>

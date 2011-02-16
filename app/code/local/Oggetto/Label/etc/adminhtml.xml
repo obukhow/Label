@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <menu>
+        <label module="label">
+            <title>Oggetto</title>
+            <sort_order>71</sort_order>
+            <children>
+                <items module="label">
+                    <title>Labels</title>
+                    <sort_order>0</sort_order>
+                    <action>/system_config/edit/section/label/</action>
+                </items>
+            </children>
+        </label>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <label translate="title" module="label">
+                                        <title>Label</title>
+                                    </label>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    <layout>
+        <updates>
+            <label>
+                <file>label.xml</file>
+            </label>
+        </updates>
+    </layout>
+</config>
