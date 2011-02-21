@@ -80,7 +80,11 @@ class Oggetto_Label_Helper_Data extends Mage_Core_Helper_Abstract
     public function getImage($image)
     {
         if ($this->_page == 'category')
-            $this->_image = Mage::helper('catalog/image')->init($this->_product, 'thumbnail', $image)->constrainOnly(1)->resize(60);
+            $this->_image = Mage::helper('catalog/image')->init($this->_product, 'thumbnail', $image)
+                ->constrainOnly(TRUE)
+                ->keepAspectRatio(TRUE)
+                ->keepFrame(FALSE)
+                ->resize(60);
         else
             $this->_image = Mage::helper('catalog/image')->init($this->_product, 'thumbnail', $image);
     }
