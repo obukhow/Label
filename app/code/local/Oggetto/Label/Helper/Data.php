@@ -46,7 +46,12 @@ class Oggetto_Label_Helper_Data extends Mage_Core_Helper_Abstract
     {
         $this->_display = $this->_product->getLabelDisplay();
         $this->setPosition($this->_product->getLabelPosition());
-        $this->getImage($this->_product->getLabelImage());
+
+        //check did admin set the custom image
+        if ($this->_product->getLabelImage())
+            $this->getImage($this->_product->getLabelImage());
+        else
+            $this->_image = 0;
     }
 
     public function getDefaultLabel()
@@ -81,17 +86,17 @@ class Oggetto_Label_Helper_Data extends Mage_Core_Helper_Abstract
     {
         if ($this->_page == 'category')
             $this->_image = Mage::helper('catalog/image')->init($this->_product, 'thumbnail', $image)
-                ->constrainOnly(TRUE)
-                ->keepAspectRatio(TRUE)
-                ->keepFrame(FALSE)
-                ->resize(60);
+                            ->constrainOnly(TRUE)
+                            ->keepAspectRatio(TRUE)
+                            ->keepFrame(FALSE)
+                            ->resize(60);
         else
             $this->_image = Mage::helper('catalog/image')->init($this->_product, 'thumbnail', $image);
     }
 
     public function returnLabel()
     {
-        if ($this->_show)
+        if ($this->_show && $this->_image)
             $this->_label = '<div class="product-img-label" style="position:absolute; height:' .
                     $this->_size . 'px; width: ' .
                     $this->_size . 'px; top:12px; left:10px; z-index: 70; pointer-events: none;background: url(\'' .
