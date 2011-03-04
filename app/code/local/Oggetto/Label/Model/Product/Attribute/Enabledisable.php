@@ -7,11 +7,11 @@ class Oggetto_Label_Model_Product_Attribute_Enabledisable extends Mage_Eav_Model
             $this->_options = array(
                array(
                     'value' => '0',
-                    'label' => 'No',
+                    'label' => Mage::helper('label')->__('No'),
                 ),
                 array(
                     'value' => '1',
-                    'label' => 'Yes',
+                    'label' => Mage::helper('label')->__('Yes'),
                 )
             );
         }

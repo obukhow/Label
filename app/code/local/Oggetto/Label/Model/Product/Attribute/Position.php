@@ -9,23 +9,23 @@ class Oggetto_Label_Model_Product_Attribute_Position extends Mage_Eav_Model_Enti
             $this->_options = array(
                 array(
                     'value' => 'topleft',
-                    'label' => 'Top left',
+                    'label' => Mage::helper('label')->__('Top left'),
                 ),
                 array(
                     'value' => 'topright',
-                    'label' => 'Top right',
+                    'label' => Mage::helper('label')->__('Top right'),
                 ),
                 array(
                     'value' => 'center',
-                    'label' => 'Center',
+                    'label' => Mage::helper('label')->__('Center'),
                 ),
                 array(
                     'value' => 'bottomleft',
-                    'label' => 'Bottom left',
+                    'label' => Mage::helper('label')->__('Bottom left'),
                 ),
                 array(
                     'value' => 'bottomright',
-                    'label' => 'Bottom right',
+                    'label' => Mage::helper('label')->__('Bottom right'),
                 )
             );
         }
@@ -37,23 +37,23 @@ class Oggetto_Label_Model_Product_Attribute_Position extends Mage_Eav_Model_Enti
         return array(
             array(
                 'value' => 'topleft',
-                'label' => 'Top left'
+                'label' => Mage::helper('label')->__('Top left'),
             ),
             array(
                 'value' => 'topright',
-                'label' => 'Top right'
+                'label' => Mage::helper('label')->__('Top right'),
             ),
             array(
                 'value' => 'center',
-                'label' => 'Center',
+                'label' => Mage::helper('label')->__('Center'),
             ),
             array(
                 'value' => 'bottomleft',
-                'label' => 'Bottom left'
+                'label' => Mage::helper('label')->__('Bottom left'),
             ),
             array(
                 'value' => 'bottomright',
-                'label' => 'Bottom right'
+                'label' => Mage::helper('label')->__('Bottom right'),
             )
         );
     }

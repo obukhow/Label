@@ -22,6 +22,15 @@
                 </label>
             </updates>
         </layout>
+        <translate>
+            <modules>
+                <Oggetto_Label>
+                    <files>
+                        <default>Oggetto_Label.csv</default>
+                    </files>
+                </Oggetto_Label>
+            </modules>
+        </translate>
     </frontend>
     <admin>
         <routers>
@@ -39,7 +48,7 @@
                     <frontName>label</frontName>
                 </args>
             </label>
-             <catalog>
+            <catalog>
                 <args>
                     <modules>
                         <quicklook before="Mage_Adminhtml_Catalog_ProductController">Oggetto_QuickLook_Product
@@ -49,6 +58,17 @@
             </catalog>
         </routers>
     </admin>
+    <adminhtml>
+        <translate>
+            <modules>
+                <Oggetto_Label>
+                    <files>
+                        <default>Oggetto_Label.csv</default>
+                    </files>
+                </Oggetto_Label>
+            </modules>
+        </translate>
+    </adminhtml>
     <global>
         <resources>
             <label_setup>
@@ -106,5 +126,5 @@
                 <class>Oggetto_Label_Model</class>
             </attribute>
         </models>
-    </global>
+     </global>
 </config>

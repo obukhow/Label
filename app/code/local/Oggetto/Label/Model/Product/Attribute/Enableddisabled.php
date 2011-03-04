@@ -7,11 +7,11 @@ class Oggetto_Label_Model_Product_Attribute_Enableddisabled extends Mage_Eav_Mod
             $this->_options = array(
                array(
                     'value' => '0',
-                    'label' => 'disabled',
+                    'label' => Mage::helper('label')->__('disabled'),
                 ),
                 array(
                     'value' => '1',
-                    'label' => 'enabled',
+                    'label' => Mage::helper('label')->__('enabled'),
                 )
             );
         }

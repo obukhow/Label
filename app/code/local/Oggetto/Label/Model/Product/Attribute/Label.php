@@ -6,7 +6,7 @@ class Oggetto_Label_Model_Product_Attribute_Label extends Mage_Eav_Model_Entity_
     public function toOptionArray()
     {
         $labels = array();
-        $labels[] = array('value' => '0', 'label' => 'No');
+        $labels[] = array('value' => '0', 'label' => Mage::helper('label')->__('No'));
         
 
         if (Mage::getStoreConfig('label/label_group1/label_name1'))
@@ -20,13 +20,13 @@ class Oggetto_Label_Model_Product_Attribute_Label extends Mage_Eav_Model_Entity_
 
         if (Mage::getStoreConfig('label/label_group4/label_name4'))
             $labels[] = array('value' => '4', 'label' => Mage::getStoreConfig('label/label_group4/label_name4'));
-       $labels[] = array('value' => '5', 'label' => 'Custom');
+       $labels[] = array('value' => '5', 'label' => Mage::helper('label')->__('Custom'));
         return $labels;
     }
      public function getOptionArray()
     {
         $labels = array();
-        $labels['0'] = 'No';
+        $labels['0'] = Mage::helper('label')->__('No');
 
 
         if (Mage::getStoreConfig('label/label_group1/label_name1'))
@@ -41,7 +41,7 @@ class Oggetto_Label_Model_Product_Attribute_Label extends Mage_Eav_Model_Entity_
         if (Mage::getStoreConfig('label/label_group4/label_name4'))
             $labels['4'] = Mage::getStoreConfig('label/label_group4/label_name4');
 
-       $labels['5'] = 'Custom';
+       $labels['5'] = Mage::helper('label')->__('Custom');
         return $labels;
     }
      /**

@@ -8,16 +8,16 @@
     </tabs>
     <sections>
         <label module="label" translate="label">
-            <label>Label</label>
+            <label>Labels</label>
             <sort_order>200</sort_order>
             <show_in_default>1</show_in_default>
             <show_in_website>1</show_in_website>
             <show_in_store>1</show_in_store>
             <tab>oggetto_tab</tab>
             <groups>
-                <label_group1 translate="label">
-                    <label>Labels 1 Settings</label>
-                    <comment>This settings are using when product Label Display is set to Disable</comment>
+                <label_group1 translate="label comment">
+                    <label>Label #1 Settings</label>
+                    <comment>This label will be added to product's Label options</comment>
                     <sort_order>10</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
@@ -67,9 +67,9 @@
                         </label_position1>
                     </fields>
                 </label_group1>
-                <label_group2 translate="label">
-                    <label>Label 2 Settings </label>
-                    <comment>This settings are using when product Label Display is set to Disable</comment>
+                <label_group2 translate="label comment">
+                    <label>Label #2 Settings</label>
+                    <comment>This label will be added to product's Label options</comment>
                     <sort_order>11</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
@@ -119,9 +119,9 @@
                         </label_position2>
                     </fields>
                 </label_group2>
-                <label_group3 translate="label">
-                    <label>Labels 3 Settings</label>
-                    <comment>This settings are using when product Label Display is set to Disable</comment>
+                <label_group3 translate="label comment">
+                    <label>Label #3 Settings</label>
+                    <comment>This label will be added to product's Label options</comment>
                     <sort_order>12</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
@@ -171,9 +171,9 @@
                         </label_position3>
                     </fields>
                 </label_group3>
-                <label_group4 translate="label">
-                    <label>Labels 4 Settings</label>
-                    <comment>This settings are using when product Label Display is set to Disable</comment>
+                <label_group4 translate="label comment">
+                    <label>Label #4 Settings</label>
+                    <comment>This label will be added to product's Label options</comment>
                     <sort_order>13</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>

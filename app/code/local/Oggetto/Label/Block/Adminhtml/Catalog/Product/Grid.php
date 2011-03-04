@@ -81,14 +81,14 @@ class Oggetto_Label_Block_Adminhtml_Catalog_Product_Grid extends Mage_Adminhtml_
         ));
         $labels = Mage::getSingleton('attribute/Product_Attribute_Label')->toOptionArray();
         $this->getMassactionBlock()->addItem('label', array(
-            'label' => Mage::helper('catalog')->__('Change label'),
+            'label' => Mage::helper('label')->__('Change label'),
             'url' => $this->getUrl('*/*/massLabel', array('_current' => true)),
             'additional' => array(
                 'visibility' => array(
                     'name' => 'label',
                     'type' => 'select',
                     'class' => 'required-entry',
-                    'label' => Mage::helper('catalog')->__('Label'),
+                    'label' => Mage::helper('label')->__('Label'),
                     'values' => $labels
                 )
             )
@@ -205,7 +205,7 @@ class Oggetto_Label_Block_Adminhtml_Catalog_Product_Grid extends Mage_Adminhtml_
         }
         $this->addColumn('label',
                 array(
-                    'header' => Mage::helper('core')->__('Label'),
+                    'header' => Mage::helper('label')->__('Label'),
                     'width' => '100px',
                     'sortable' => true,
                     'index' => 'is_label',

@@ -7,15 +7,15 @@ class Oggetto_Label_Model_Product_Attribute_Display extends Mage_Eav_Model_Entit
             $this->_options = array(
                array(
                     'value' => '1',
-                    'label' => 'Product & Category',
+                    'label' => Mage::helper('label')->__('Product & Category'),
                 ),
                 array(
                     'value' => '2',
-                    'label' => 'Product',
+                    'label' => Mage::helper('label')->__('Product'),
                 ),
                  array(
                     'value' => '3',
-                    'label' => 'Category',
+                    'label' => Mage::helper('label')->__('Category'),
                 )
             );
         }
@@ -26,15 +26,15 @@ class Oggetto_Label_Model_Product_Attribute_Display extends Mage_Eav_Model_Entit
         return array(
             array(
                 'value' => 1,
-                'label' => 'Product & Category'
+                'label' => Mage::helper('label')->__('Product & Category')
                 ),
             array(
                 'value' => 2,
-                'label' => 'Product'
+                'label' => Mage::helper('label')->__('Product')
                 ),
             array(
                 'value' => 3,
-                'label' => 'Category'
+                'label' => Mage::helper('label')->__('Category')
                 ),
         );
     }
